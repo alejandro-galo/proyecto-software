@@ -1,5 +1,5 @@
 <?php
-// modules/jugadores/index.php
+
 require_once '../../config/database.php';
 
 if (!isset($_SESSION['id_usuario'])) {
@@ -58,9 +58,17 @@ $resultado = $conexion->query($query);
                                     <?php echo $row['activo'] ? '<span class="badge bg-success">Activo</span>' : '<span class="badge bg-danger">Inactivo</span>'; ?>
                                 </td>
                                 <td>
-                                    <a href="editar_jugador.php?id=<?php echo $row['id_jugador']; ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="editar_jugador.php?id=<?php echo $row['id_jugador']; ?>" class="btn btn-sm btn-primary" title="Editar">
+                                      <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="eliminar_jugador.php?id=<?php echo $row['id_jugador']; ?>" 
+                                       class="btn btn-sm btn-danger" 
+                                       title="Eliminar" 
+                                       onclick="return confirm('¿Estás seguro de eliminar a este jugador?')">
+                                         <i class="fas fa-trash"></i>
+                                     </a>
+                                    </td>
                                 </td>
-                            </tr>
                             <?php endwhile; ?>
                         <?php else: ?>
                             <tr>

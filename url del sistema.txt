@@ -1,0 +1,26 @@
+http://localhost/mi_sistema/modules/auth/login.php
+
+usuario administrador:
+admin
+
+contraseña:
+123456
+-------------------------
+usuario administrador:
+desarrollador
+
+contraseña:
+111111
+-------------------------
+usuario administrador:
+albertito
+
+contraseña:
+222222
+-------------------------
+usuario administrador:
+sofiperez
+
+contraseña:
+444444
+-------------------------

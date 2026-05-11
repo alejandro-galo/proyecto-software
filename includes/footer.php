@@ -1,13 +1,12 @@
-</main> <footer class="bg-dark text-white text-center p-3 mt-4">
-    <p>&copy; <?php echo date('Y'); ?> - Sistema de Gestión - Todos los derechos reservados.</p>
-</footer>
+</main><footer class="footer mt-auto py-3 bg-white border-top">
+        <div class="container text-center">
+            <span class="text-muted">
+                &copy; 2026 <strong>LigaBasket PRO</strong> - Desarrollado por Gonzalo Alejandro Tintaya Farfán
+            </span>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
-
-<script src="/mi_sistema/assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

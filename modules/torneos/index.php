@@ -51,6 +51,11 @@ $resultado = $conexion->query($query);
                                 </td>
                                 <td>
                                     <a href="editar_torneo.php?id=<?php echo $row['id_torneo']; ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="eliminar_torneo.php?id=<?php echo $row['id_torneo']; ?>" 
+                                       class="btn btn-sm btn-danger" 
+                                       onclick="return confirm('¿Estás seguro de eliminar este torneo? Se borrarán todos los partidos asociados.')">
+                                       <i class="fas fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                             <?php endwhile; ?>

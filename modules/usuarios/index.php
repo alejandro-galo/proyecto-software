@@ -46,7 +46,19 @@ $resultado = $conexion->query($query);
                             <?php echo $row['activo'] ? '<span class="badge bg-success">Activo</span>' : '<span class="badge bg-danger">Inactivo</span>'; ?>
                         </td>
                         <td>
-                            <button class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></button>
+                            
+                        <a href="editar_usuario.php?id=<?php echo $row['id_usuario']; ?>" class="btn btn-sm btn-warning" title="Editar Usuario">
+                             <i class="fas fa-edit"></i>
+                        </a>
+
+                            <?php if ($row['id_usuario'] != $_SESSION['id_usuario']): ?>
+                        <a href="eliminar_usuario.php?id=<?php echo $row['id_usuario']; ?>" 
+                            class="btn btn-sm btn-danger" 
+                            title="Eliminar" 
+                            onclick="return confirm('¿Estás seguro de eliminar a este usuario? No podrá volver a ingresar.')">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                            <?php endif; ?>
                         </td>
                     </tr>
                     <?php endwhile; ?>

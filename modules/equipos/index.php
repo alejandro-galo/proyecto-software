@@ -1,5 +1,5 @@
 <?php
-// modules/equipos/index.php
+
 
 // 1. Conexión a la base de datos y sesión
 require_once '../../config/database.php';
