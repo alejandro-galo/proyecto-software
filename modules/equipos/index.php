@@ -59,8 +59,11 @@ if (!$resultado) {
                                     <a href="editar_equipo.php?id=<?php echo $equipo['id_equipo']; ?>" class="btn btn-sm btn-primary" title="Editar">
                                         <i class="fas fa-edit"></i>
                                     </a>
-                                    <button class="btn btn-sm btn-danger" title="Eliminar">
+                                    <a href="eliminar_equipo.php?id=<?php echo $equipo['id_equipo']; ?>" 
+                                      class="btn btn-sm btn-danger" 
+                                      onclick="return confirm('¿Estás seguro de eliminar este equipo? Esto podría afectar a sus jugadores registrados.')">
                                         <i class="fas fa-trash"></i>
+                                    </a>
                                     </button>
                                 </td>
                             </tr>
@@ -78,6 +81,6 @@ if (!$resultado) {
 </div>
 
 <?php
-// 5. Cargar el diseño inferior
+
 require_once '../../includes/footer.php';
 ?>
