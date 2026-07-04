@@ -1,5 +1,5 @@
 <?php
-// modules/usuarios/nuevo_usuario.php
+
 require_once '../../config/database.php';
 
 // Seguridad: Solo el Administrador (rol 1) puede crear usuarios

@@ -1,5 +1,4 @@
 <?php
-// modules/equipos/index.php
 
 // 1. Requerimos la base de datos PRIMERO (esto ya inicia la sesión gracias a tu database.php)
 require_once '../../config/database.php';

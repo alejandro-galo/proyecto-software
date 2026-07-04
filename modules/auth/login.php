@@ -1,5 +1,4 @@
 <?php
-// modules/auth/login.php
 
 // 1. ESTA LÍNEA ES VITAL: Llama a la base de datos (y de paso inicia la sesión)
 require_once '../../config/database.php';

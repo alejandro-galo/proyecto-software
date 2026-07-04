@@ -1,5 +1,4 @@
 <?php
-// core/config.php
 
 // Define la configuración principal de la aplicación
 $config = [

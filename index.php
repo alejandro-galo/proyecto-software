@@ -1,5 +1,5 @@
 <?php
-// /mi_sistema/index.php
+
 require_once 'config/database.php';
 
 // Verificación de seguridad

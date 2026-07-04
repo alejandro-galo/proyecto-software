@@ -1,5 +1,5 @@
 <?php
-// modules/partidos/nuevo_partido.php
+
 require_once '../../config/database.php';
 
 if (!isset($_SESSION['id_usuario'])) {
