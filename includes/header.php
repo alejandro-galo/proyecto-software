@@ -17,6 +17,21 @@ if (session_status() == PHP_SESSION_NONE) { session_start(); }
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     
     <style>
+        /* Fondo dinámico animado para todo el sistema */
+        body {
+            background: linear-gradient(-45deg, #f4f6f9, #e0eafc, #cfdef3, #e9ecef);
+            background-size: 400% 400%;
+            animation: moverFondo 15s ease infinite;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes moverFondo {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .navbar-custom {
             background: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
             padding: 12px 0;
@@ -64,7 +79,7 @@ if (session_status() == PHP_SESSION_NONE) { session_start(); }
         }
     </style>
 </head>
-<body class="bg-light">
+<body>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
   <div class="container-fluid">
